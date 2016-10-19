@@ -3,11 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const authentication = require('./middleware/authentication');
-const authRouter = require('./routes/authRouter');
-const userRouter = require('./routes/userRouter');
-const sentenceRouter = require('./routes/sentenceRouter');
-const letterRouter = require('./routes/letterRouter');
+const registerRouter = require('./routes/registerRouter');
 
 const app = express();
 
