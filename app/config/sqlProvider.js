@@ -1,0 +1,15 @@
+const QueryFile = require('pg-promise').QueryFile;
+const path = require('path');
+
+function sql(file) {
+  const fullPath = path.join(__dirname, file);
+  return new QueryFile(fullPath, { minify: true });
+}
+
+const sqlProvider = {
+  fans: {
+    create: sql('./sql/user/create.sql'),
+  },
+};
+
+module.exports = sqlProvider;
