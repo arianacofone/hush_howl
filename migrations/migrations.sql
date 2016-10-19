@@ -5,8 +5,8 @@ CREATE DATABASE hush_howl;
 
 \c hush_howl
 
-CREATE TABLE users (
+CREATE TABLE fans (
   id SERIAL PRIMARY KEY,
   name VARCHAR NOT NULL,
-  email VARCHAR NOT NULL,
+  email VARCHAR NOT NULL
 );
