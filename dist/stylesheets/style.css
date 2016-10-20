@@ -32,18 +32,21 @@ h4 {
   border: none;
   margin: .5rem;
   padding-left: 1rem;
-  font-size: .8rem;
+  font-size: .7rem;
   font-family: 'Trirong', serif;
   font-family: 'Raleway', sans-serif;
   display: block;
   background-color: rgb(1,2,34);
+  border: 1px solid rgb(43,28,61);
   text-transform: uppercase;
   color: white;
+  outline: none;
 }
 
 #sendButton {
-  background-color: rgb(56,45,70);
-  color: rgb(163,132,0);
+  background-color: rgb(43,28,61);
+  border: .5px solid rgb(1,2,34);
+  color: rgb(198,160,0);
   width: 15rem;
-  font-size: .8rem;
+  font-size: 1rem;
 }
