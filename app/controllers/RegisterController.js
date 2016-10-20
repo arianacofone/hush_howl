@@ -7,7 +7,8 @@ class RegisterController {
       email: req.body.email,
     };
     RegisterDAO.create(registrationData)
-               .then((data) => res.status(200).json(data));
+               .then((data) => res.status(200).json(data))
+               .catch(err => res.send(err));
   }
 }
 

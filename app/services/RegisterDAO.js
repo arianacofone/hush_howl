@@ -1,6 +1,6 @@
 const db = require('../config/db');
-const sql = require('../config/sqlProvider');
-const Fan = require('../models/Registration');
+const sql = require('../config/sqlProvider').registrations;
+const Registration = require('../models/Registration');
 
 class RegisterDAO {
   static create({ name, email }) {

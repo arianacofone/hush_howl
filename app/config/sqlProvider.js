@@ -7,7 +7,7 @@ function sql(file) {
 }
 
 const sqlProvider = {
-  fans: {
+  registrations: {
     create: sql('./sql/registration/create.sql'),
   },
 };
