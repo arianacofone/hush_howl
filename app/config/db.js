@@ -1,4 +1,4 @@
-if(!process.env.DATABASE_URL) {
+if (!process.env.DATABASE_URL) {
   require('dotenv').config();
 }
 

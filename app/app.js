@@ -20,6 +20,6 @@ app.use(session({
 
 app.use(morgan('dev'));
 
-app.use('/api/register', registerRouter);
+app.use('/', registerRouter);
 
 module.exports = app;

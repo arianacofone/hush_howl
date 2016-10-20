@@ -1,11 +1,11 @@
 const db = require('../config/db');
 const sql = require('../config/sqlProvider');
-const Fan = require('../models/Fan');
+const Fan = require('../models/Registration');
 
 class RegisterDAO {
-  static create({ body }) {
-    return db.one(sql.create, [body])
-             .then((data) => new Fan(data));
+  static create({ name, email }) {
+    return db.one(sql.create, [name, email])
+             .then((row) => new Registration(row));
   }
 }
 
