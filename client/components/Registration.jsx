@@ -33,11 +33,9 @@ class Registration extends Component {
     const updated = {};
     updated[name] = value;
     this.setState(updated);
-    console.log(this.state);
   }
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state);
     this.httpPost(this.state);
   }
   render() {
@@ -64,7 +62,7 @@ class Registration extends Component {
             className="input"
             id="sendButton"
             type="submit"
-            value="welcome to the club"
+            value="join the club"
           />
         </form>
       </div>

@@ -3,7 +3,6 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  /*width: 100vh;*/
   background-repeat: no-repeat;
   text-align: center;
   color: rgb(1,2,34);
@@ -12,6 +11,7 @@ body {
 h2 {
   font-family: 'Trirong', serif;
   font-size: 3rem;
+  letter-spacing: 2px;
 }
 
 h4 {
@@ -37,16 +37,18 @@ h4 {
   font-family: 'Raleway', sans-serif;
   display: block;
   background-color: rgb(1,2,34);
-  border: 1px solid rgb(43,28,61);
+  border: 1px solid white;
   text-transform: uppercase;
   color: white;
   outline: none;
 }
 
 #sendButton {
-  background-color: rgb(43,28,61);
+  background-color: white;
   border: .5px solid rgb(1,2,34);
-  color: rgb(198,160,0);
-  width: 15rem;
+  color: rgb(1,2,34);
+  width: 15.2rem;
   font-size: .9rem;
+  padding: 0;
+  letter-spacing: 1px;
 }

@@ -7,9 +7,9 @@ function sql(file) {
 }
 
 const sqlProvider = {
-  registrations: {
-    create: sql('./sql/registration/create.sql'),
-  },
+  // registrations: {
+  create: sql('./sql/registration/create.sql'),
+  // },
 };
 
 module.exports = sqlProvider;
