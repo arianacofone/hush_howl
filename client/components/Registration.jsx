@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import request from 'superagent';
 
 class Registration extends Component {
@@ -63,6 +64,7 @@ class Registration extends Component {
             id="sendButton"
             type="submit"
             value="join the club"
+            onClick={<Link to="/newEntry"/>}
           />
         </form>
       </div>
