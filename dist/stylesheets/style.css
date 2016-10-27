@@ -52,3 +52,16 @@ h4 {
   padding: 0;
   letter-spacing: 1px;
 }
+
+.modal {
+  margin: 0 auto;
+  width: 90vh;
+  height: 80vh;
+  top: 2rem;
+  font-family: cursive;
+}
+
+#img {
+  margin-top: -20rem;
+  width: 100%;
+}

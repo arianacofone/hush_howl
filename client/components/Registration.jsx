@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import request from 'superagent';
+
+const propTypes = {
+  openModal: React.PropTypes.func,
+};
 
 class Registration extends Component {
   constructor(props) {
@@ -26,6 +29,10 @@ class Registration extends Component {
                console.log(res);
              }
            });
+    this.setState({
+      name: '',
+      email: '',
+    });
   }
   handleInput(e) {
     const target = e.target;
@@ -64,12 +71,14 @@ class Registration extends Component {
             id="sendButton"
             type="submit"
             value="join the club"
-            onClick={<Link to="/newEntry"/>}
+            onClick={this.props.openModal}
           />
         </form>
       </div>
     );
   }
 }
+
+Registration.PropTypes = propTypes;
 
 export default Registration;
