@@ -26,8 +26,6 @@ if (process.env.ENV === 'dev') {
 }
 
 app.use(express.static(path.join(__dirname, '/dist')));
-app.use(fallback('index.html', { root: __dirname + '/dist'}));
-
 app.get('/', (request, response) => {
   response.sendFile(path.join(__dirname, 'dist/index.html'));
 });
