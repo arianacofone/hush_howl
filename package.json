@@ -14,7 +14,7 @@
   },
   "author": "Ariana Dziedzic",
   "engines": {
-    "node": "6.6.0"
+    "node": "8.1.4"
   },
   "license": "ISC",
   "bugs": {
